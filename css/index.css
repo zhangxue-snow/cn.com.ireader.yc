@@ -322,13 +322,16 @@
     line-height: 41px;
     border-bottom: 1px solid #e8e8e8;
 }
+
 .contenttop-right-bestseller-text-book span,
 .contenttop-right-bestseller-text-book h3{
     float: left;
 }
+
 .contenttop-right-bestseller-text-book p {
     float: right;
 }
+
 .contenttop-right-bestseller-text-book span{
     display: inline-block;
     width: 18px;
