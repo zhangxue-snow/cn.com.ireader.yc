@@ -147,7 +147,6 @@
 .bigbox {
     width: 100%;
     overflow: hidden;
-    /* height: 2940px; */
     background: #fff7f7 url(../img/dszq/dszq_bg.jpg)no-repeat top center;
     padding-top: 300px;
 
@@ -478,10 +477,14 @@
     background-color: #ffbdbd;
 }
 
-.zbrecom-right-diamond-text-book h3 {
+.zbrecom-right-diamond-text-book a {
     color: #212121;
     font-size: 14px;
     font-weight: normal;
+}
+
+.zbrecom-right-diamond-text-book a:hover {
+    color: #f66;
 }
 
 .zbrecom-right-diamond-text-book p {

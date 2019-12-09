@@ -326,7 +326,6 @@
     color: #666;
     font-size: 14px;
     margin-left: 24px;
-    
 }
 
 .contenttop-right-bestseller-title span>a:hover {
@@ -346,7 +345,7 @@
     height: calc(490px - 34px);
 }
 .contenttop-right-bestseller-text-book li{
-    line-height: 41px;
+    line-height: 40px;
     border-bottom: 1px solid #e8e8e8;
 }
 
@@ -387,10 +386,15 @@
     background-color: #ffbdbd;
 }
 
-.contenttop-right-bestseller-text-book h3 {
+.contenttop-right-bestseller-text-book a {
+    display:inline-block;
     color: #212121;
     font-size: 14px;
     font-weight: normal;
+}
+
+.contenttop-right-bestseller-text-book a:hover {
+    color: #f66;
 }
 
 .contenttop-right-bestseller-text-book p {
@@ -789,7 +793,7 @@
 }
 
 .freebook-right-popularity-text-book span,
-.freebook-right-popularity-text-book h3{
+.freebook-right-popularity-text-book a{
     float: left;
 }
 
@@ -825,10 +829,14 @@
     background-color: #ffbdbd;
 }
 
-.freebook-right-popularity-text-book h3 {
+.freebook-right-popularity-text-book a {
     color: #212121;
     font-size: 14px;
     font-weight: normal;
+}
+
+.freebook-right-popularity-text-book a:hover {
+    color: #f66;
 }
 
 .freebook-right-popularity-text-book p {
@@ -1059,34 +1067,34 @@
     height: 100%;
 }
 
-/* 8.2.1 人气榜标题 */
-.finish-right-popularity-title {
+/* 8.2.1 月票榜标题 */
+.finish-right-ticket-title {
     width: 100%;
     height: 34px;
     border-bottom: 2px solid #f66;
     margin-top: 74px;
 }
 
-.finish-right-popularity-title h2 {
+.finish-right-ticket-title h2 {
     float: left;
     color: #f66;
     font-size: 20px;
     font-weight: normal;
 }
 
-.finish-right-popularity-title span{
+.finish-right-ticket-title span{
     float: right;
     margin-top: 4px;
 }
 
-.finish-right-popularity-title span>a {
+.finish-right-ticket-title span>a {
     color: #666;
     font-size: 14px;
     margin-left: 24px;
     
 }
 
-.finish-right-popularity-title span>a:hover {
+.finish-right-ticket-title span>a:hover {
     display: inline-block;
     color: #f66;
     border: 1px solid #f66;
@@ -1097,29 +1105,29 @@
     border-radius: 11px;
 }
 
-/* 8.2.2 人气榜内容 */
-.finish-right-popularity-text {
+/* 8.2.2 月票榜内容 */
+.finish-right-ticket-text {
     width: 100%;
     margin-top: 16px;
     height: calc(490px - 34px);
 }
 
 /* 8.2.2.1 月票榜书籍 */
-.finish-right-popularity-text-book li{
+.finish-right-ticket-text-book li{
     line-height: 41px;
     border-bottom: 1px solid #e8e8e8;
 }
 
-.finish-right-popularity-text-book span,
-.finish-right-popularity-text-book h3{
+.finish-right-ticket-text-book span,
+.finish-right-ticket-text-book h3{
     float: left;
 }
 
-.finish-right-popularity-text-book p {
+.finish-right-ticket-text-book p {
     float: right;
 }
 
-.finish-right-popularity-text-book span{
+.finish-right-ticket-text-book span{
     display: inline-block;
     width: 18px;
     height: 18px;
@@ -1132,33 +1140,37 @@
     margin-top: 10px;
 }
 
-.finish-right-popularity-text-book .no1 {
+.finish-right-ticket-text-book .no1 {
     color: #fff;
     background-color: #f66;
 }
 
-.finish-right-popularity-text-book .no2 {
+.finish-right-ticket-text-book .no2 {
     color: #fff;
     background-color: #ff9c9c;
 }
 
-.finish-right-popularity-text-book .no3 {
+.finish-right-ticket-text-book .no3 {
     color: #fff;
     background-color: #ffbdbd;
 }
 
-.finish-right-popularity-text-book h3 {
+.finish-right-ticket-text-book a {
     color: #212121;
     font-size: 14px;
     font-weight: normal;
 }
 
-.finish-right-popularity-text-book p {
+.finish-right-ticket-text-book a:hover {
+    color: #f66;
+}
+
+.finish-right-ticket-text-book p {
     color: #9b9b9b;
 }
 
 /* 8.2.2.2 查看更多 */
-.finish-right-popularity-text-more {
+.finish-right-ticket-text-more {
     display: block;
     width: 230px;
     height: 30px;
@@ -1168,7 +1180,7 @@
     line-height: 28px;
 }
 
-.finish-right-popularity-text-more:hover {
+.finish-right-ticket-text-more:hover {
     color: #f66;
     border: 1px solid #f66;
 } 
@@ -1403,7 +1415,7 @@
 }
 
 .writer-right-diamond-text-book span,
-.writer-right-diamond-text-book h3{
+.writer-right-diamond-text-book a{
     float: left;
 }
 
@@ -1439,10 +1451,14 @@
     background-color: #ffbdbd;
 }
 
-.writer-right-diamond-text-book h3 {
+.writer-right-diamond-text-book a {
     color: #212121;
     font-size: 14px;
     font-weight: normal;
+}
+
+.writer-right-diamond-text-book a:hover {
+    color: #f66;
 }
 
 .writer-right-diamond-text-book p {

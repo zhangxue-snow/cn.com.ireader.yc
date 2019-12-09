@@ -1,0 +1,38 @@
+.zzfl {
+    width: 100%;
+    background: #a0e5ea url(../img/zzfl/fl_bg.png) no-repeat center top;
+    overflow: hidden;
+}
+
+.container {
+    width: 1100px;
+}
+
+/* 1、福利时间 */ 
+
+.fltime>img {
+    margin-top: 543px;
+    margin-bottom: 22px;
+}
+
+
+/* 二、内容 */
+.zzfl_content {
+    width: 100%;
+    height: 11465px;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+/* 2、签约奖 */
+
+.signing>img {
+    margin: 0 53px;
+    padding: 60px 0 30px;
+}
+
+.signing>h4 {
+    font-size: 26px;
+    color: #7952a8;
+    font-weight: normal;
+}
