@@ -1,3 +1,5 @@
+/* 一、头部 */
+
 /* 1、顶部导航 */
 
 /* 1.1 顶部导航左边 */
@@ -74,6 +76,9 @@
     box-sizing: border-box;
 } 
 
+.search-searchbox input:hover {
+    border: 1px solid #f66;
+}
 .search-searchbox .search-button {
     position: absolute;
     right: 0;
@@ -82,6 +87,16 @@
     height: 44px;
     background-color: #f66;
     border-radius: 22px;
+}
+
+.search-searchbox .search-button>img {
+    position: absolute;
+    top: 10px;
+    left: 21px;
+}
+
+.search-searchbox .search-button>img:hover {
+    background-color:#faf4f4;
 }
 /* 3、内容导航 */
 
@@ -122,6 +137,7 @@
     font-size: 20px;
     font-weight: bolder;
 }
+/* 一、头部结束 */
 
 
 /* 二、内容 */
@@ -144,6 +160,7 @@
     margin-right: 40px;
 }
 
+/* 4.1.1 轮播图 */
 .contenttop-left-slideshow {
     width: 100%;
     height: 332px;
@@ -177,6 +194,7 @@
     margin-left: 20px;
 }
 
+/* 4.1.2 站点动态 */
 .contenttop-left-sitedynamic {
     width: 100%;
     height: calc(490px - 332px);
@@ -203,6 +221,7 @@
     margin-right: 20px;
     border-bottom: 1px solid #e8e8e8;
 }
+
 .contenttop-left-sitedynamic-hotspot li:nth-child(2n) {
     margin-right: 0;
 }
@@ -230,15 +249,22 @@
     margin-right: 40px;
 }
 
+/* 4.2.1 推荐小说 */
 .contenttop-center-recommend {
     padding-bottom: 13px;
+    overflow: hidden;
 }
 
-.contenttop-center-recommend img{
+.contenttop-center-recommend>img{
     float: left;
     width: 84px;
     height: 112px;
     padding-right: 10px;
+    transition: all .5s;
+}
+
+.contenttop-center-recommend img:hover {
+    transform: scale(1.1);
 }
 
 .contenttop-center-recommend-intro {
@@ -275,9 +301,9 @@
     float: right;
     width: 230px;
     height: 100%;
-    /* background-color: cyan; */
 }
 
+/* 4.3.1. 畅销榜标题 */
 .contenttop-right-bestseller-title {
     width: 100%;
     height: 34px;
@@ -314,6 +340,7 @@
     border-radius: 11px;
 }
 
+/* 4.3.2 畅销榜内容 */
 .contenttop-right-bestseller-text {
     width: 100%;
     height: calc(490px - 34px);
@@ -370,6 +397,7 @@
     color: #9b9b9b;
 }
 
+/* 4.3.2.1 查看更多 */
 .contenttop-right-bestseller-text-more {
     display: block;
     width: 230px;
@@ -402,7 +430,7 @@
 
 /* 6.1 火热连载 */
 
-/* 标题 */
+/* 6.1 火热连载标题 */
 .fiery-title {
     width: 100%;
     height: 115px;
@@ -446,7 +474,6 @@
 .fiery-content {
     width: 100%;
     height: calc(400px - 115px);
-    /* background-color: aquamarine; */
 }
 
 .fiery-content li {
@@ -454,10 +481,11 @@
     width: 250px;
     height: 112px;
     padding: 30px 40px 0 0;
-    /* background-color: blue; */
+    overflow: hidden;
 }
-.fiery-content .n4,
-.fiery-content .n8{
+
+.fiery-content>li:nth-child(4),
+.fiery-content>li:nth-child(8) {
     padding-right: 0;
 }
 
@@ -465,6 +493,11 @@
     float: left;
     width: 84px;
     height: 112px;
+    transition: all .5s;
+}
+
+.fiery-content li>img:hover {
+    transform: scale(1.1);
 }
 
 .fiery-content-text {
@@ -502,14 +535,12 @@
 .freebook {
     width: 100%;
     height: 585px;
-    /* background-color: chartreuse; */
 }
 /* 7.1 免费新书左边 */
 .freebook-left {
     float: left;
     width: 850px;
     height: 100%;
-    /* background-color: cadetblue; */
 }
 
 /* 7.1.1 免费新书左边标题 */
@@ -535,6 +566,7 @@
     padding-top: 30px;
 }
 
+/* 7.1.2.1 轮播图 */
 .freebook-left-content-slideshow {
     float: left;
     width: 270px;
@@ -547,16 +579,24 @@
     width: 230px;
     height: calc(445px - 28px);
     padding: 28px 20px 0;
+    overflow: hidden;
 }
+
 .freebook-left-content-slideshow01 img {
     width: 120px;
     height: 160px;
     margin: 20px 55px 20px;
+    transition: all .5s;
+}
+
+.freebook-left-content-slideshow01 img:hover {
+    transform: scale(1.1);
 }
 
 .freebook-left-content-slideshow01 li {
     display: inline-block;
 }
+
 .freebook-left-content-slideshow01 li>a {
     display: inline-block;
     width: 8px;
@@ -572,7 +612,6 @@
 
 
 .freebook-left-content-slideshow01 .h1 {
-    /* display: inline-block; */
     color: #212121;
     font-size: 18px;
 }
@@ -615,12 +654,13 @@
     margin-left: 40px;
 }
 
+/* 书籍介绍 */
 .freebook-left-content-text-indro {
     margin-bottom: 24px;
 }
 .freebook-left-content-text-indro li{
     margin-bottom: 32px;
-    /* background-color: aquamarine; */
+    overflow: hidden;
 }
 .freebook-left-content-text-indro li:last-child{
     margin-bottom: 0;
@@ -630,6 +670,11 @@
     float: left;
     width: 84px;
     height: 112px;
+    transition: all .5s;
+}
+
+.freebook-left-content-text-indro li>img:hover {
+    transform: scale(1.1);
 }
 
 .text-indro-book {
@@ -661,6 +706,7 @@
     color: #9b9b9b;
 }
 
+/* 书名 */
 .freebook-left-content-text-bookname {
     width: 250px;
     height: 162px;
@@ -671,7 +717,6 @@
     width: 250px;
     height: 54px;
     border-bottom: 1px solid #e8e8e8;
-    /* background-color: cornflowerblue; */
     box-sizing: border-box;
 }
 
@@ -690,9 +735,9 @@
     float: right;
     width: 230px;
     height: 100%;
-    /* background-color: cyan; */
 }
 
+/* 7.2.1 人气榜标题 */
 .freebook-right-popularity-title {
     width: 100%;
     height: 34px;
@@ -730,23 +775,28 @@
     border-radius: 11px;
 }
 
+/* 7.2.2 人气榜内容 */
 .freebook-right-popularity-text {
     width: 100%;
     margin-top: 16px;
     height: calc(490px - 34px);
 }
+
+/* 7.2.2.1 人气榜书籍 */
 .freebook-right-popularity-text-book li{
-    
     line-height: 41px;
     border-bottom: 1px solid #e8e8e8;
 }
+
 .freebook-right-popularity-text-book span,
 .freebook-right-popularity-text-book h3{
     float: left;
 }
+
 .freebook-right-popularity-text-book p {
     float: right;
 }
+
 .freebook-right-popularity-text-book span{
     display: inline-block;
     width: 18px;
@@ -785,6 +835,7 @@
     color: #9b9b9b;
 }
 
+/* 7.2.2.2 查看更多 */
 .freebook-right-popularity-text-more {
     display: block;
     width: 230px;
@@ -806,14 +857,13 @@
 .finish {
     width: 100%;
     height: 585px;
-    /* background-color: chartreuse; */
 }
+
 /* 8.1 畅读完结左边 */
 .finish-left {
     float: left;
     width: 850px;
     height: 100%;
-    /* background-color: cadetblue; */
 }
 
 /* 8.1.1 畅读完结左边标题 */
@@ -839,6 +889,7 @@
     padding-top: 30px;
 }
 
+/* 8.1.2.1 轮播图 */
 .finish-left-content-slideshow {
     float: left;
     width: 270px;
@@ -851,16 +902,24 @@
     width: 230px;
     height: calc(445px - 28px);
     padding: 28px 20px 0;
+    overflow: hidden;
 }
+
 .finish-left-content-slideshow01 img {
     width: 120px;
     height: 160px;
     margin: 20px 55px 20px;
+    transition: all .5s;
+}
+
+.finish-left-content-slideshow01 img:hover {
+    transform: scale(1.1);
 }
 
 .finish-left-content-slideshow01 li {
     display: inline-block;
 }
+
 .finish-left-content-slideshow01 li>a {
     display: inline-block;
     width: 8px;
@@ -874,9 +933,7 @@
     background-color: #007aff;
 }
 
-
 .finish-left-content-slideshow01 .h1 {
-    /* display: inline-block; */
     color: #212121;
     font-size: 18px;
 }
@@ -919,13 +976,16 @@
     margin-left: 40px;
 }
 
+/* 书籍介绍 */
 .finish-left-content-text-indro {
     margin-bottom: 24px;
 }
+
 .finish-left-content-text-indro li{
     margin-bottom: 32px;
-    /* background-color: aquamarine; */
+    overflow: hidden;
 }
+
 .finish-left-content-text-indro li:last-child{
     margin-bottom: 0;
 }
@@ -934,6 +994,11 @@
     float: left;
     width: 84px;
     height: 112px;
+    transition: all .5s;
+}
+
+.finish-left-content-text-indro li>img:hover {
+    transform: scale(1.1);
 }
 
 .text-indro-book {
@@ -965,17 +1030,16 @@
     color: #9b9b9b;
 }
 
+/* 书名 */
 .finish-left-content-text-bookname {
     width: 250px;
     height: 162px;
-    
 }
 
 .finish-left-content-text-bookname li {
     width: 250px;
     height: 54px;
     border-bottom: 1px solid #e8e8e8;
-    /* background-color: cornflowerblue; */
     box-sizing: border-box;
 }
 
@@ -989,14 +1053,13 @@
 }
 
 /* 8.2 畅读完结右边 */
-
 .finish-right {
     float: right;
     width: 230px;
     height: 100%;
-    /* background-color: cyan; */
 }
 
+/* 8.2.1 人气榜标题 */
 .finish-right-popularity-title {
     width: 100%;
     height: 34px;
@@ -1034,23 +1097,28 @@
     border-radius: 11px;
 }
 
+/* 8.2.2 人气榜内容 */
 .finish-right-popularity-text {
     width: 100%;
     margin-top: 16px;
     height: calc(490px - 34px);
 }
+
+/* 8.2.2.1 月票榜书籍 */
 .finish-right-popularity-text-book li{
-    
     line-height: 41px;
     border-bottom: 1px solid #e8e8e8;
 }
+
 .finish-right-popularity-text-book span,
 .finish-right-popularity-text-book h3{
     float: left;
 }
+
 .finish-right-popularity-text-book p {
     float: right;
 }
+
 .finish-right-popularity-text-book span{
     display: inline-block;
     width: 18px;
@@ -1089,6 +1157,7 @@
     color: #9b9b9b;
 }
 
+/* 8.2.2.2 查看更多 */
 .finish-right-popularity-text-more {
     display: block;
     width: 230px;
@@ -1111,14 +1180,12 @@
 .writer {
     width: 100%;
     height: 585px;
-    /* background-color: chartreuse; */
 }
 /* 9.1 大神作家左边 */
 .writer-left {
     float: left;
     width: 850px;
     height: 100%;
-    /* background-color: cadetblue; */
 }
 
 /* 9.1.1 大神作家左边标题 */
@@ -1145,11 +1212,20 @@
 
 /* 9.1.2.1 海报 */
 .writer-left-content-poster {
+    position: relative;
     float: left;
     width: 270px;
     height: 445px;
     margin-top: 30px;
     background-color: #f7fcff;
+}
+
+.writer-left-content-poster>img {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 40px;
+    height: 135px;
 }
 
 .writer-left-content-poster01 {
@@ -1215,7 +1291,7 @@
     background-color: #fa4f4f;
 }
 
-/* 9.1.2.2 内容 */
+/* 9.1.2.2 大神作家内容 */
 .writer-left-content-text {
     float: left;
     width: 540px;
@@ -1228,7 +1304,6 @@
     float: left;
     width: 100%;
     height: 155px;
-    /* background-color: aquamarine; */
     border-bottom: 1px solid #ccc;
     box-sizing: border-box;
 }
@@ -1236,18 +1311,6 @@
 .writer-left-content-text ul>li {
     padding: 22px 0 16px;
 }
-
-
-/* .finish-left-content-text-indro {
-    margin-bottom: 24px;
-} */
-/* .finish-left-content-text-indro li{
-    margin-bottom: 32px;
-    background-color: aquamarine;
-} */
-/*  li:last-child{
-    margin-bottom: 0;
-} */
 
 .writer-left-content-text li>img {
     float: left;
@@ -1260,6 +1323,7 @@
     padding-left: 18px;
     width: 436px;
 }
+
 .writer-left-content-text-indro.h1 {
     display: inline-block;
     color: #00a3da;
@@ -1267,12 +1331,11 @@
     margin-bottom: 8px;
 }
 .writer-left-content-text-indro span {
-    /* display:block; */
     color: #9b9b9b;
     font-size: 13px;
 }
+
 .writer-left-content-text-indro p {
-    
     margin-bottom: 16px;
 }
 
@@ -1282,108 +1345,40 @@
     line-height: 22px; 
 }
 
- /* .writer-left-content-text-indro .div1>span {
-    float: left;
-    width: 48px;
-    height: 19px;
-}
-.writer-left-content-text-indro .div1>p {
-    float: right;
-    max-width: 378;
-    height: 19px;
-}  */
-
-
-
-
-
-/* .text-indro-book {
-    float: left;
-    width: 156px;
-    height: 100%;
-    padding-left: 10px;
-} */
-
-/* .text-indro-book a {
-    display: block;
-    font-size: 15px;
-    color: #212121;
-    font-weight: normal;
-    margin-top: 6px;
-} */
-
-/* .text-indro-book a:hover {
-    color: #f66;
-} */
-/* .text-indro-book p {
-    color: #9b9b9b;
-    margin-top: 8px;
-} */
-/* .text-indro-book span {
-    display: inline-block;
-    margin-top: 30px;
-    line-height: 20px;
-    color: #9b9b9b;
-} */
-
-/* .finish-left-content-text-bookname {
-    width: 250px;
-    height: 162px;
-    
-} */
-
-/* .finish-left-content-text-bookname li {
-    width: 250px;
-    height: 54px;
-    border-bottom: 1px solid #e8e8e8;
-    background-color: cornflowerblue;
-    box-sizing: border-box;
-} */
-
-/* .finish-left-content-text-bookname li>a {
-    font-size: 16px;
-    color: #212121;
-    line-height: 54px;
-} */
-/* .finish-left-content-text-bookname li>a:hover {
-    color: #f66;
-} */
-
-/* 8.2 畅读完结右边 */
-
-/* .finish-right {
+/* 9.2 大神作家右边 */
+.writer-right {
     float: right;
     width: 230px;
     height: 100%;
-    background-color: cyan;
-} */
+}
 
-/* .finish-right-popularity-title {
+/* 9.2.1 钻石榜标题 */
+.writer-right-diamond-title {
     width: 100%;
     height: 34px;
     border-bottom: 2px solid #f66;
     margin-top: 74px;
-} */
+}
 
-/* .finish-right-popularity-title h2 {
+.writer-right-diamond-title h2 {
     float: left;
     color: #f66;
     font-size: 20px;
     font-weight: normal;
-} */
+}
 
-/* .finish-right-popularity-title span{
+.writer-right-diamond-title span{
     float: right;
     margin-top: 4px;
-} */
+}
 
-/* .finish-right-popularity-title span>a {
+.writer-right-diamond-title span>a {
     color: #666;
     font-size: 14px;
     margin-left: 24px; 
-} */
+}
 
-/* .finish-right-popularity-title span>a:hover {
+.writer-right-diamond-title span>a:hover {
     display: inline-block;
     color: #f66;
     border: 1px solid #f66;
@@ -1392,26 +1387,31 @@
     text-align: center;
     line-height: 18px;
     border-radius: 11px;
-} */
+}
 
-/* .finish-right-popularity-text {
+/* 9.2.2 钻石榜内容 */
+.writer-right-diamond-text {
     width: 100%;
     margin-top: 16px;
     height: calc(490px - 34px);
-} */
-/* .finish-right-popularity-text-book li{
-    
+}
+
+/* 9.2.2.1 钻石榜书籍 */
+.writer-right-diamond-text-book li{
     line-height: 41px;
     border-bottom: 1px solid #e8e8e8;
-} */
-/* .finish-right-popularity-text-book span,
-.finish-right-popularity-text-book h3{
+}
+
+.writer-right-diamond-text-book span,
+.writer-right-diamond-text-book h3{
     float: left;
-} */
-/* .finish-right-popularity-text-book p {
+}
+
+.writer-right-diamond-text-book p {
     float: right;
-} */
-/* .finish-right-popularity-text-book span{
+}
+
+.writer-right-diamond-text-book span{
     display: inline-block;
     width: 18px;
     height: 18px;
@@ -1422,34 +1422,35 @@
     line-height: 18px;
     margin-right: 10px;
     margin-top: 10px;
-} */
+}
 
-/* .finish-right-popularity-text-book .no1 {
+.writer-right-diamond-text-book .no1 {
     color: #fff;
     background-color: #f66;
-} */
+}
 
-/* .finish-right-popularity-text-book .no2 {
+.writer-right-diamond-text-book .no2 {
     color: #fff;
     background-color: #ff9c9c;
-} */
+}
 
-/* .finish-right-popularity-text-book .no3 {
+.writer-right-diamond-text-book .no3 {
     color: #fff;
     background-color: #ffbdbd;
-} */
+}
 
-/* .finish-right-popularity-text-book h3 {
+.writer-right-diamond-text-book h3 {
     color: #212121;
     font-size: 14px;
     font-weight: normal;
-} */
+}
 
-/* .finish-right-popularity-text-book p {
+.writer-right-diamond-text-book p {
     color: #9b9b9b;
-} */
+}
 
-/* .finish-right-popularity-text-more {
+/* 9.2.2.2 查看更多 */
+.writer-right-diamond-text-more {
     display: block;
     width: 230px;
     height: 30px;
@@ -1457,22 +1458,21 @@
     border: 1px solid #cdcdcd;
     text-align: center;
     line-height: 28px;
-} */
+}
 
-/* .finish-right-popularity-text-more:hover {
+.writer-right-diamond-text-more:hover {
     color: #f66;
     border: 1px solid #f66;
-}  */
+} 
 
 
 /* 10、作品更新 */
 .update {
     width: 100%;
     height: 1275px;margin-bottom: 52px;
-    /* background-color: blueviolet; */
 }
 
-/* 10.1 标题 */
+/* 10.1 作品更新标题 */
 .update-title {
     width: 100%;
     height: 110px;
@@ -1488,10 +1488,10 @@
     margin-top: 64px;
 }
 
+/* 10.2 作品更新内容 */
 .update-content {
     width: 100%;
     height: calc(1275px - 110px);
-    /* background-color: chocolate; */
     line-height: 50px;
     padding-top: 15px;
     border-bottom: 2px solid #f66;
@@ -1503,7 +1503,6 @@
     width: 100%;
     height: 50px;
     border-bottom:1px solid #e8e8e8;
-    /* background-color: cornflowerblue; */
 }
 .update-content ul>li {
     float: left;
@@ -1537,12 +1536,21 @@
     margin-right: 120px;
 }
 .update-content-list .chapter>a {
+    position: relative;
     color: #666;
 }
 
 .update-content-list a:hover {
     color: #f66;
 }
+
+.update-content-list .chapter>img {
+    position: absolute;
+    width: 34px;
+    height: 16px;
+    margin: 17px 0 0 10px;
+}
+
 .update-content-list .writer {
     float: left;
     width: 100px;
@@ -1556,6 +1564,7 @@
     height: 50px;
     text-align: right;
 }
+
 
 /* 11、友情链接 */
 .blogroll {
@@ -1573,6 +1582,7 @@
     font-size: 14px;
     margin-right: 15px;
 }
+
 /* 11.2 友情链接链接 */
 .blogroll-link {
     float: left;

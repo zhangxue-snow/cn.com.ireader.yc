@@ -1,0 +1,868 @@
+/* 一、头部 */
+
+/* 1、顶部导航 */
+
+/* 1.1 顶部导航左边 */
+.topnav {
+    width: 100%;
+    height: 40px;
+}
+
+.topnav-left {
+    float: left;
+}
+
+.topnav-left a {
+    line-height: 38px;
+    color: #9b9b9b;
+    font-size: 12px;
+    margin-right: 30px;
+}
+
+.topnav-left .ireader {
+    display: inline-block;
+    color: #666;
+    border-bottom: 2px solid #666;
+}
+
+.topnav-left .shushan:hover {
+    color: #f66;
+}
+
+/* 1.2 顶部导航右边 */
+.topnav-right {
+    float: right;
+}
+
+.topnav-right a {
+    line-height: 40px;
+    color: #666;
+    margin-left: 40px;
+}
+
+.topnav-right a:hover {
+    color: #f66;
+}
+
+
+/* 2、搜索栏 */
+
+.search {
+    width: 100%;
+    height: 110px;
+    background-image: url('../img/search_bg.jpg');
+}
+
+.search-logo {
+    float: left;
+    width: 240px;
+    margin-top: 25px;
+}
+
+.search-searchbox {
+    position: relative;
+    float: left;
+    margin-left: 165px;
+    
+}
+
+.search-searchbox input{
+    border: none;
+    width: 410px;
+    border-radius: 22px;
+    height: 44px;
+    margin-top: 32px;
+    padding: 0 80px 0 26px;
+    box-sizing: border-box;
+} 
+
+.search-searchbox input:hover {
+    border: 1px solid #f66;
+}
+.search-searchbox .search-button {
+    position: absolute;
+    right: 0;
+    top: 32px;
+    width: 64px;
+    height: 44px;
+    background-color: #f66;
+    border-radius: 22px;
+}
+
+.search-searchbox .search-button>img {
+    position: absolute;
+    top: 10px;
+    left: 21px;
+}
+
+.search-searchbox .search-button>img:hover {
+    background-color:#faf4f4;
+}
+/* 3、内容导航 */
+
+.contentnav {
+    width: 100%;
+    height: 60px;
+    background-color: #f66;
+}
+
+.contentnav-left {
+    float: left;
+}
+
+.contentnav-left a{
+    color: #fff;
+    font-size: 16px;
+    line-height: 60px;
+    margin-right: 45px;
+}
+
+.contentnav-left a:hover {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.contentnav-right {
+    float: right;
+}
+
+.contentnav-right a {
+    color: #fff;
+    font-size: 16px;
+    line-height: 60px;
+}
+
+
+.contentnav-right a:hover {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+/* 二、内容 */
+.bigbox {
+    width: 100%;
+    overflow: hidden;
+    /* height: 2940px; */
+    background: #fff7f7 url(../img/dszq/dszq_bg.jpg)no-repeat top center;
+    padding-top: 300px;
+
+}
+
+/* 4、公告 */
+.notice-bg {
+    width: 100%;
+    height: 340px;
+    overflow: hidden;
+    
+    background-image: url(../img/dszq/notice_bg.jpg);
+}
+
+.notice {
+    width: 1040px;
+    height: 300px;
+    background-color: #fff;
+    margin: 20px 40px;
+    overflow: hidden;
+    
+}
+
+/* 4.1 左边海报 */
+.notice-poster {
+    float: left;
+    width: 512px;
+    height: 262px;
+    border: 1px solid #e8e8e8;
+    overflow: hidden;
+    margin: 20px 38px 20px 95px;
+}
+
+.notice-poster img {
+    margin: 6px 5px;
+}
+
+/* 4.2 右边公告内容 */
+
+.notice-content {
+    padding: 20px 0;
+    line-height: 50px;
+}
+
+.notice-content>li {
+    float: left;
+    width: 300px;
+    height: 50px;
+    border-bottom: 1px solid #e8e8e8;
+    font-size: 16px;
+    color: #666;
+}
+.notice-content>li:hover {
+    color: #f66;
+}
+
+/* 5、本期IP推荐 */
+.bqIP {
+    width: 100%;
+    height: 403px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+/* 5.1 本期IP推荐标题 */
+.bqIP-title {
+    width: 100%;
+    height: 108px;
+    /* background-color: chocolate; */
+}
+
+.bqIP-title img {
+    width: 241px;
+    height: 28px;
+    margin: 40px 450px;
+}
+
+/* 5.2 本期bqIP推荐内容 */
+
+.bqIP-content {
+    width: 1040px;
+    height: calc(403px - 108px - 40px);
+    margin: 0 40px;
+}
+
+
+.bqIP-content ul {
+    float: left;
+    width: 140px;
+    height: 100%;
+    text-align: center;
+    margin-right: 40px;
+}
+
+.bqIP-content ul:nth-child(6){
+    margin-right: 0;
+}
+
+.bqIP-content ul>li img {
+    width: 140px;
+    height: 187px;
+}
+.bqIP-content ul>li a {
+    display: block;
+    font-size: 16px;
+    color: #212121;
+    margin-top: 18px;
+    margin-bottom: 14px;
+}
+.bqIP-content ul>li a:hover {
+    color: #f66;
+}
+
+.bqIP-content ul>li p{
+    font-size: 14px;
+    color: #666;
+}
+
+
+
+/* 6、主编推荐 */
+.zbrecom {
+    width: 100%;
+    height: 580px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+/* 6.1 左边内容 */
+.zbrecom-left {
+    float: left;
+    width: 770px;
+    height: 500px;
+    margin: 40px;
+}
+
+/* 6.1.1 书籍介绍 */
+.zbrecom-left-indro {
+    width: 100%;
+    height: 255px;
+    border-bottom: 1px solid #9b9b9b;
+}
+
+.zbrecom-left-indro01 {
+    float: left;
+    width: 370px;
+    height: 214px;
+}
+
+/* 6.1.1.1 标题 */
+.zbrecom-left-indro01-title {
+    width: 365px;
+    font-size: 20px;
+    color: #00a3da;
+    margin-bottom: 30px;
+}
+.zbrecom-left-indro01-book img {
+    float: left;
+    width: 120px;
+    height: 160px;
+}
+
+.zbrecom-left-indro01-book-text {
+    float: left;
+    width: 225px;
+    height: 160px;
+    margin-left: 20px;
+}
+
+.zbrecom-left-indro01-book-text a {
+    display: block;
+    color: #212121;
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+.zbrecom-left-indro01-book-text a:hover {
+    color: #f66;
+}
+
+.zbrecom-left-indro01-book-text span {
+    display: block;
+    color: #666;
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 24px;
+}
+
+.zbrecom-left-indro01-book-text p{
+    color: #9b9b9b;
+    font-size: 14px;
+    margin-top: 40px;
+}
+.zbrecom-left-indro .n2 {
+    margin-left: 30px;
+}
+
+/* 6.1.2 推荐书籍 */
+.zbrecom-left-book {
+    position: relative;
+    width: 100%;
+    height: 205px;
+    margin-top: 40px;
+}
+
+.zbrecom-left-book .rec-bg {
+    position: absolute;
+    top: -40px;
+    width: 40px;
+    height: 134px;
+}
+.zbrecom-left-book ul {
+    float: left;
+    width: 114px;
+    height: 205px;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.zbrecom-left-book li>img {
+    display: block;
+    width: 114px;
+    height: 152px;
+}
+.zbrecom-left-book-text a {
+    display: block;
+    color: #212121;
+    font-size: 16px;
+    margin: 6px 0 0;
+}
+
+.zbrecom-left-book-text a:hover {
+    color: #f66;
+}
+
+.zbrecom-left-book-text p {
+    color: #666;
+    font-size: 14px;
+    margin-top: 8px;
+}
+/* 6.2 右边内容 */
+.zbrecom-right {
+    float: left;
+    width: 230px;
+    height: 500px;
+    margin: 40px 0;
+}
+/* 6.2.1 钻石榜标题 */
+.zbrecom-right-diamond-title {
+    width: 100%;
+    height: 34px;
+    border-bottom: 2px solid #f66;
+}
+
+.zbrecom-right-diamond-title h2 {
+    float: left;
+    color: #f66;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.zbrecom-right-diamond-title span{
+    float: right;
+    margin-top: 4px;
+}
+
+.zbrecom-right-diamond-title span>a {
+    color: #666;
+    font-size: 14px;
+    margin-left: 24px; 
+}
+
+.zbrecom-right-diamond-title span>a:hover {
+    display: inline-block;
+    color: #f66;
+    border: 1px solid #f66;
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 11px;
+}
+
+/* 6.2.2 钻石榜内容 */
+.zbrecom-right-diamond-text {
+    width: 100%;
+    margin-top: 13px;
+    height: calc(490px - 34px);
+}
+/* 钻石榜书籍 */
+.zbrecom-right-diamond-text-book li{
+    
+    line-height: 41px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.zbrecom-right-diamond-text-book span,
+.zbrecom-right-diamond-text-book h3{
+    float: left;
+}
+.zbrecom-right-diamond-text-book p {
+    float: right;
+}
+.zbrecom-right-diamond-text-book span{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    color: #666;
+    border-radius: 50%;
+    background-color: #e8e8e8;
+    text-align: center;
+    line-height: 18px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.zbrecom-right-diamond-text-book .no1 {
+    color: #fff;
+    background-color: #f66;
+}
+
+.zbrecom-right-diamond-text-book .no2 {
+    color: #fff;
+    background-color: #ff9c9c;
+}
+
+.zbrecom-right-diamond-text-book .no3 {
+    color: #fff;
+    background-color: #ffbdbd;
+}
+
+.zbrecom-right-diamond-text-book h3 {
+    color: #212121;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.zbrecom-right-diamond-text-book p {
+    color: #9b9b9b;
+}
+
+/* 查看更多 */
+.zbrecom-right-diamond-text-more {
+    display: block;
+    width: 230px;
+    height: 30px;
+    color: #9b9b9b;
+    border: 1px solid #cdcdcd;
+    text-align: center;
+    line-height: 28px;
+}
+
+.zbrecom-right-diamond-text-more:hover {
+    color: #f66;
+    border: 1px solid #f66;
+} 
+
+
+/* 7、优质IP推荐 */
+.yzIP {
+    width: 100%;
+    height: 680px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+/* 7.1 优质IP推荐标题 */
+.yzIP-title {
+    width: 100%;
+    height: 108px;
+}
+
+.yzIP-title img {
+    width: 241px;
+    height: 28px;
+    margin: 40px 450px;
+}
+
+/* 7.2 优质IP推荐内容 */
+.yzIP-content {
+    width:100%;
+    height: calc(680px - 108px);
+}
+
+/* 7.2.1 书籍 */
+.yzIP-content-book {
+    width: 1040px;
+    height: 380px;
+    margin: 0 40px;
+}
+
+.yzIP-content-book ul {
+    float: left;
+    width: 320px;
+    height: 160px;
+    margin-bottom: 30px;
+    margin-right: 40px;
+}
+
+.yzIP-content-book ul:nth-child(3),
+.yzIP-content-book ul:nth-child(6){
+    margin-right: 0;
+}
+
+.yzIP-content-book li>img {
+    float: left;
+    width: 120px;
+    height: 160px;
+}
+
+.yzIP-content-book-text {
+    float: left;
+    width: 180px;
+    height: 160px;
+    margin-left: 20px;
+}
+
+.yzIP-content-book-text a {
+    display: block;
+    font-size: 16px;
+    color: #212121;
+    padding-top: 8px;
+}
+.yzIP-content-book-text a:hover {
+    color: #f66;
+}
+.yzIP-content-book-text p {
+
+    font-size: 12px;
+    color: #9b9b9b;
+    padding: 8px 0 40px;
+}
+.yzIP-content-book-text span {
+    display: inline-block;
+    font-size: 12px;
+    color: #9b9b9b;
+    height: 66px;
+    line-height: 22px;
+}
+
+/* 7.2.2 书名 */
+.yzIP-content-bookname {
+    width: 1040px;
+    height: 153px;
+    margin: 0 40px;
+}
+
+.yzIP-content-bookname ul {
+    float: left;
+    width: 320px;
+    height: 100%;
+    margin-right: 40px;
+}
+
+.yzIP-content-bookname ul:nth-child(3) {
+    margin-right: 0;
+}
+
+.yzIP-content-bookname ul>li {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #e8e8e8;
+    line-height: 50px;
+    font-size: 16px;
+}
+
+.yzIP-content-bookname li>span {
+    color: #666;
+}
+
+.yzIP-content-bookname li>b {
+    color: #9b9b9b;
+}
+
+.yzIP-content-bookname li>a {
+    color: #212121;
+}
+
+.yzIP-content-bookname li>a:hover {
+    color: #f66;
+}
+
+
+
+/* 8、最新 */
+.newest {
+    width: 100%;
+    height: 535px;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+/* 8.1 最近更新 */
+.newest-update {
+    float: left;
+    width: 770px;
+    height: 455px;
+    margin: 40px;
+}
+
+/* 8.1.1 最近更新标题 */
+.newest-update-title {
+    font-size: 20px;
+    color: #f66;
+    padding-bottom: 12px;
+}
+
+/* 8.1.2 更新列表 */
+.newest-update-list {
+    width: 100%;
+    height: calc(445px);
+}
+
+.newest-update-list ul>li {
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    font-size: 14px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.newest-update-list .type {
+    display: inline-block;
+    width: 85px;
+    margin-right: 20px;
+    color: #666;
+}
+
+.newest-update-list .bookname {
+    display: inline-block;
+    width: 180px;
+    margin-right: 30px; 
+}
+
+.newest-update-list .bookname a {
+    color: #212121;
+}
+
+.newest-update-list .bookname a:hover,
+.newest-update-list .chapter a:hover {
+    color: #f66;
+}
+
+.newest-update-list .chapter {
+    display: inline-block;
+    width: 240px;
+    margin-right: 30px;
+    color: #666;
+}
+
+.newest-update-list .chapter a {
+    color: #666;
+}
+
+.newest-update-list .writer {
+    display: inline-block;
+    width: 85px;
+    margin-right: 20px;
+    color: #666;
+}
+
+.newest-update-list .time {
+    display: inline-block;
+    width: 60px;
+    text-align: right;
+    color: #666;
+}
+/* 8.2 最新完结 */
+.newest-finish {
+    float: left;
+    width: 230px;
+    height: 475px;
+    margin: 40px 0;
+}
+
+/* 8.2.1 最新完结标题 */
+.newest-finsh-title {
+    font-size: 20px;
+    color: #f66;
+    padding-bottom: 12px;
+}
+
+
+/* 8.2.2 榜单列表 */
+.newest-finsh-list-book li{
+    line-height: 43px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.newest-finsh-list-book li:nth-child(10) {
+    border: none;
+}
+
+.newest-finsh-list-book span,
+.newest-finsh-list-book a{
+    float: left;
+}
+
+.newest-finsh-list-book p {
+    float: right;
+}
+
+.newest-finsh-list-book span{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    color: #666;
+    border-radius: 50%;
+    background-color: #e8e8e8;
+    text-align: center;
+    line-height: 18px;
+    margin-right: 10px;
+    margin-top: 12px;
+}
+
+.newest-finsh-list-book .no1 {
+    color: #fff;
+    background-color: #f66;
+}
+
+.newest-finsh-list-book .no2 {
+    color: #fff;
+    background-color: #ff9c9c;
+}
+
+.newest-finsh-list-book .no3 {
+    color: #fff;
+    background-color: #ffbdbd;
+}
+
+.newest-finsh-list-book a {
+    color: #212121;
+    font-size: 14px;
+    font-weight: normal;
+}
+.newest-finsh-list-book a:hover {
+    color: #f66;
+}
+.newest-finsh-list-book p {
+    color: #9b9b9b;
+}
+
+
+/* 三、底部 */
+
+/* 9、友情链接 */
+.blogroll {
+    width: 100%;
+    height: 110px;
+    margin-bottom: 45px;
+}
+
+/* 9.1 友情链接标题 */
+.blogroll-title {
+    float: left;
+    width: 60px;
+    height: 100%; 
+    color: #666;
+    font-size: 14px;
+    margin-right: 15px;
+}
+/* 9.2 友情链接链接 */
+.blogroll-link {
+    float: left;
+    width: calc(1120px - 60px - 15px);
+    height: 100%;
+}
+
+.blogroll-link a {
+    display: inline-block;
+    color: #666;
+    font-size: 14px;
+    margin-right: 20px;
+    line-height: 1.5;
+}
+
+.blogroll-link a:hover {
+    color: #f66;
+}
+
+
+/* 10、底部导航 */
+.bottomnav {
+    width: 100%;
+    height: 14px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.bottomnav a {
+    font-size: 14px;
+    color: #666;
+    margin:0 20px;
+}
+
+.bottomnav a:hover {
+    color: #f66;
+}
+
+/* 11、版权 */
+.copyright {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.copyright p {
+    text-align: center;
+    line-height: 2;
+    color: #9b9b9b;
+    font-size: 14px;
+}
+
+.copyright span>a {
+    color: #666;
+}
+
+.copyright span>a:hover {
+    color: #f66;
+}
