@@ -26,9 +26,12 @@
 
 /* 2、签约奖 */
 
+.signing {
+    padding-left: 66px;
+}
 .signing>img {
     margin: 0 53px;
-    padding: 60px 0 30px;
+    padding:0 30px;
 }
 
 .signing>h4 {
