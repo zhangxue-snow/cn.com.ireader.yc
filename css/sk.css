@@ -238,6 +238,10 @@ section img:hover {
     padding-top: 4px;
 }
 
+.content a:hover {
+    color: #f66;
+}
+
 .content p {
     position: relative;
     font-size: 12px;
@@ -337,26 +341,6 @@ nav input {
 nav input:hover {
     border: 1px solid #f66;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* 三、底部 */
 footer {

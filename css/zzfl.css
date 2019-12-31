@@ -25,17 +25,3 @@
 }
 
 /* 2、签约奖 */
-
-.signing {
-    padding-left: 66px;
-}
-.signing>img {
-    margin: 0 53px;
-    padding:0 30px;
-}
-
-.signing>h4 {
-    font-size: 26px;
-    color: #7952a8;
-    font-weight: normal;
-}
