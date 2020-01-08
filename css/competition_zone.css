@@ -50,7 +50,7 @@
 .search {
     width: 100%;
     height: 110px;
-    background-image: url('../img/search_bg.jpg');
+    background-image: url('../image/img/search_bg.jpg');
 }
 
 .search-logo {
@@ -147,7 +147,7 @@
 .bigbox {
     width: 100%;
     overflow: hidden;
-    background: #fff7f7 url(../img/dszq/dszq_bg.jpg)no-repeat top center;
+    background: #fff7f7 url(../image/upload/dszq-img/dszq_bg.jpg)no-repeat top center;
     padding-top: 300px;
 
 }
@@ -158,7 +158,7 @@
     height: 340px;
     overflow: hidden;
     
-    background-image: url(../img/dszq/notice_bg.jpg);
+    background-image: url(../image/upload/dszq-img/notice_bg.jpg);
 }
 
 .notice {
